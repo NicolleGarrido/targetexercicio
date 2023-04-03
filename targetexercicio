@@ -1,0 +1,17 @@
+# Define o número a ser verificado
+numero_verificar = 21
+
+# Define as variáveis iniciais da sequência de Fibonacci
+fibonacci_atual = 0
+fibonacci_proximo = 1
+
+# Laço de repetição para calcular a sequência de Fibonacci
+while fibonacci_atual <= numero_verificar:
+    # Verifica se o número pertence à sequência
+    if fibonacci_atual == numero_verificar:
+        print("O número", numero_verificar, "pertence à sequência de Fibonacci.")
+        break
+    # Atualiza os valores da sequência de Fibonacci
+    fibonacci_atual, fibonacci_proximo = fibonacci_proximo, fibonacci_atual + fibonacci_proximo
+else:
+    print("O número", numero_verificar, "não pertence à sequência de Fibonacci.")
